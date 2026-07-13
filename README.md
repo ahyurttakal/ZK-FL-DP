@@ -412,53 +412,8 @@ honest < low-noise < no-noise
 
 ---
 
-# 12. Deney yarıda kesilirse
 
-Tamamlanan koşular otomatik olarak atlanır. Aynı komutlar yeniden çalıştırılabilir.
-
-## Ana kampanyaya devam et
-
-```powershell
-python experiments\campaign.py `
-  --profile paper `
-  --device auto `
-  --only E1,E2,E4,E5,E6,E8,E9 `
-  --timeout-hours 24
-```
-
-## E3’e devam et
-
-```powershell
-python experiments\campaign.py `
-  --profile paper `
-  --device cpu `
-  --only E3 `
-  --seeds 0,1,2,3,4,5,6,7,8,9 `
-  --timeout-hours 24
-```
-
-Devam ederken:
-
-- `--force` kullanma
-- `--clean` kullanma
-- `output` klasörünü silme
-
----
-
-# 13. Tamamen sıfırdan yeniden başlatma
-
-Yalnızca bütün sonuçları bilinçli olarak silmek istediğinde:
-
-```powershell
-Remove-Item output -Recurse -Force
-New-Item -ItemType Directory output | Out-Null
-```
-
-Ardından ana kampanyayı ve E3’ü yeniden başlat.
-
----
-
-# 14. Tek bakışta çalıştırma sırası
+# 12. Tek bakışta çalıştırma sırası
 
 ## Windows PowerShell
 
@@ -507,32 +462,4 @@ python run_experiments.py --analyze-only
 
 ---
 
-# 15. Önemli not: E10 TON_IoT
 
-E10 TON_IoT deneyi mevcut standart E1–E9 kampanya matrisinde henüz bulunmamaktadır.
-
-Bu rehber:
-
-- E1
-- E2
-- E3
-- E4
-- E5
-- E6
-- E7
-- E8
-- E9
-
-deneylerini kapsar.
-
-TON_IoT tabanlı E10 için ayrıca:
-
-- veri indirme ve hazırlama,
-- sızıntı riski taşıyan alanların çıkarılması,
-- train/validation/test ayrımı,
-- federated istemci dağılımı,
-- non-private ve ε=2 DP-FL karşılaştırması,
-- Macro-F1, ROC-AUC ve saldırı tespit metrikleri,
-- E10 CSV ve grafik üretimi
-
-eklenmelidir.
