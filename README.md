@@ -1,4 +1,4 @@
-# ZKDP-FL Host Üzerinde Tam SCI Deney Çalıştırma Rehberi
+# ZKDP-FL
 
 Bu rehber, ZKDP-FL deneylerinin sanal makine yerine fiziksel host bilgisayarda sıfırdan, tutarlı koşullarla ve SCI makalesine uygun biçimde çalıştırılması için hazırlanmıştır.
 
