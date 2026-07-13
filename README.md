@@ -1,6 +1,6 @@
 # ZKDP-FL
 
-Bu rehber, ZKDP-FL deneylerinin sanal makine yerine fiziksel host bilgisayarda sıfırdan, tutarlı koşullarla ve SCI makalesine uygun biçimde çalıştırılması için hazırlanmıştır.
+Bu rehber, ZKDP-FL deneylerinin sanal makine yerine fiziksel host bilgisayarda sıfırdan, tutarlı koşullarla uygun biçimde çalıştırılması için hazırlanmıştır.
 
 ## 1. Proje klasörüne geç
 
